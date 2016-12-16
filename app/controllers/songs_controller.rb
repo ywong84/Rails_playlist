@@ -25,4 +25,3 @@ class SongsController < ApplicationController
     params.require(:song).permit(:artist, :title)
   end
 end
-Song.find(2).song_users.select("users.id, first_name, last_name").group("users.id")
